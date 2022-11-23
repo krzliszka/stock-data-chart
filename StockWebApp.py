@@ -9,7 +9,7 @@ streamlit.header('**Visually** show data on a stock. Date from 23.03.2020 - 22.0
 streamlit.write('List of available stocks: APPL, AMZN, TSLA' )
 
 
-image = Image.open("/Users/krzysiek/Desktop/EiT/Programy/git/stock-data-chart/img/stock.jpg")
+image = Image.open("/path/to/img")
 streamlit.image(image, use_column_width=True)
 
 #Creating a sidebar header
@@ -44,11 +44,11 @@ def get_data(symbol):
     
     #Loading the data
     if symbol.upper() == 'AMZN':
-        df = pd.read_csv("/Users/krzysiek/Desktop/EiT/Programy/git/stock-data-chart/Stocks/AMZN.csv")
+        df = pd.read_csv("/path/to/img")
     elif symbol.upper() == 'TSLA':
-        df = pd.read_csv("/Users/krzysiek/Desktop/EiT/Programy/git/stock-data-chart/Stocks/TSLA.csv")
+        df = pd.read_csv("/path/to/img")
     elif symbol.upper() == 'AAPL':
-        df = pd.read_csv("/Users/krzysiek/Desktop/EiT/Programy/git/stock-data-chart/Stocks/AAPL.csv")
+        df = pd.read_csv("/path/to/img")
     else:
         df = pd.DataFrame(columns = ['Date', 'Close', 'Open', 'Volume', 'Adj Close', 'High', 'Low'])
 
