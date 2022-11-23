@@ -23,6 +23,9 @@ def get_input():
 
 #Creating a function to get the company name
 def get_company_name(symbol):
+    """
+    
+    """
     if symbol == 'AMZN':
         return 'Amazon'
     elif symbol == 'TSLA':
@@ -35,7 +38,10 @@ def get_company_name(symbol):
 #Creating a function to get the proper company data and the proper timeframe from
 # the user start date to the users end date
 def get_data(symbol):
-
+    """
+    
+    """
+    
     #Loading the data
     if symbol.upper() == 'AMZN':
         df = pd.read_csv("/Users/krzysiek/Desktop/EiT/Programy/git/stock-data-chart/Stocks/AMZN.csv")
